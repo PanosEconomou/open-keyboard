@@ -16,9 +16,3 @@ Let's start with some inspiration
 ## Resources
 1. [Awesome Reddit guy guide](https://www.reddit.com/r/MechanicalKeyboards/comments/4l0p41/guide_detailed_guide_to_making_a_custom_keyboard/)
 
-## Tools used
-- arch linux
-- vim
-- qutebrowser
-- duck-duck-go
-- [keyboard layout editor](https://www.keyboard-layout-editor.com)
