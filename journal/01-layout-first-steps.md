@@ -39,7 +39,8 @@ The rest of the keys look fine I guess. However, there is this [super nice artic
 
 Also here is a [bunch of people's 4x12 layouts](https://evantravers.com/articles/2019/04/20/community-post-40-keyboard-layouts/)
 
-Finally this has some nice things to [keep in mind](https://www.keyboard-layout-editor.com/#/gists/d06425aaccaef71cf3d0ffbc0e2042ba) while designing a custom 40% keyboard. I really like the idea of having a themed layout so maybe we can try and do that next. At some point I would like to optimize for latex and whatnot, so it would be nice to find out what the right balance for familiarity and ease of use woudl be.  
+Finally this has some nice things to [keep in mind](https://www.keyboard-layout-editor.com/#/gists/d06425aaccaef71cf3d0ffbc0e2042ba) while designing a custom 40% keyboard. I really like the idea of having a themed layout so maybe we can try and do that next. At some point I would like to optimize for latex and whatnot, so it would be nice to find out what the right balance for familiarity and ease of use would be.  
+I found this funny [thread](https://www.reddit.com/r/MechanicalKeyboards/comments/5xp9h4/help_improve_typing_symbols_on_planck/) that suggests this [keymap](https://esinc.net/happyfamily/keymap.c) for a latex optimized layout.
 
 There is this open source software [quantum mechanical keyboard](https://qmk.fm) that apparently has many layouts already implemented. Though they don't seem to be that crazy. 
 
