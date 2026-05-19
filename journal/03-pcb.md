@@ -12,6 +12,6 @@ Also, [this](https://customkbd.com/collections/complete-kits/products/contra-40-
 
 There is [this article](https://www.reddit.com/r/MechanicalKeyboards/comments/5a399o/guide_how_to_make_your_pcb_hotswappable/) on reddit 10 years ago that teaches you how to turn a pcb into hotswap.
 
-Honestly the more I think about it, the easier it might be to design my own pcb and then send it to JLC or something to cut. Since I don't have to worry too much about the microconstroller, it might actually be just fine, plus apparently the switches can just be wired together in some matrix without any pullups or complicated stuff to figure out. 
+Honestly the more I think about it, the easier it might be to design my own pcb and then send it to JLC or something to cut. Since I don't have to worry too much about the microconstroller, it might actually be just fine, plus apparently the switches can just be wired together in some matrix without any pullups or complicated stuff to figure out. I just have to be careful about how diodes are wired.
 Here is a [guide](https://github.com/ruiqimao/keyboard-pcb-guide) which is 10 years old but it doesn't matter! 
 Plus if I get the arduino itself, I won't even have to work out clocks and decoupling and all that stuff that I never really wanted to figure out.
