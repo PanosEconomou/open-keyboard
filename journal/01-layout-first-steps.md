@@ -34,6 +34,7 @@ Summary of Issues:
 2. Enter is awkward.
 3. \ for latex would be a pain to type as constantly as needed.
 4. No real themeing for different functions. 
+5. I have a bunch of SUPER + NON_ALPHA KEY mods that need to work while I am pressing other modifiers.
 
 The rest of the keys look fine I guess. However, there is this [super nice article](http://thedarnedestthing.com/planck%20constant) about setting up a planck layout. I like the idea of using two spacebar keys that re modified depending on some modifier key. 
 
