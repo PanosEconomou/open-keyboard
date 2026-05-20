@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "MX_v2") (type "KiCad") (uri "/Users/pano/Documents/open-keyboard/pcb/component-libraries/MX_V2/MX_Hotswap.pretty") (options "") (descr "mx hotswap"))
+)
