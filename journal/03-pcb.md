@@ -48,7 +48,7 @@ I mean I love USB-C so we will use it! The only real thing I need to keep in min
 
 When it comes to connecting to the microcontroller we need to take special attention to impedance matching. The only way I understand this is through physics. If the wire of the USB has some impedance and your circuit suddenly has something else the wave will literally reflect or refract causing shockwaves and interference with the data. So it is important to add resistors as well as calibrate the DATA channels of the PCB accordingly so that the pulse travels without breaks.
 
-The hardware design guide gives some extra information on that and how to achieve it.
+The hardware design guide gives some extra information on that and how to achieve it. In particular they say that behind the data pins there MUST be just ground otherwise all hell will break loose and we will all die. 
 
 ## Power
 
@@ -58,3 +58,8 @@ The voltage regulator comes in two packages. DPAC which is large and SOT which i
 
 Another important consideration according to the schematics is to use decoupling capacitors. we basically want a 100nF capacitor between all ppower pins to be placed physical close to them. Basically the power supply creates so much magnetic field that if it starts oscillating widely it can literally affect the microcontroller. Adding a capacitor turns this into an LC circuit where the power supply fluctuations from induced currents are smoothed out, allowing the microcontroller to operate at a higher efficiency.  
 
+## Crystal
+
+Things are starting to get a bit scary. This is probably because I have the least experience with this, but it seems to be a finicky thing altogether. Basically we want to provide an oscillating voltage on our microprocessor in order for it to act as a clock. While it does have an internal crystal it is highly recommended by raspi to use an external one. They, in-fact gave us the specifications for the crystal they extensively tested and provided ample warning about testing a billion times if you change the crystal.
+
+So, I will go with whatever they said, which is the [ABM8-272-T3](https://www.digikey.com/en/products/detail/abracon-llc/ABM8-272-T3/22472366). The only thing that we need to do in order to hook it up is to estimate the parasitic capacitance in order to make sure things work out. 
