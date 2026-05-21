@@ -62,4 +62,19 @@ Another important consideration according to the schematics is to use decoupling
 
 Things are starting to get a bit scary. This is probably because I have the least experience with this, but it seems to be a finicky thing altogether. Basically we want to provide an oscillating voltage on our microprocessor in order for it to act as a clock. While it does have an internal crystal it is highly recommended by raspi to use an external one. They, in-fact gave us the specifications for the crystal they extensively tested and provided ample warning about testing a billion times if you change the crystal.
 
-So, I will go with whatever they said, which is the [ABM8-272-T3](https://www.digikey.com/en/products/detail/abracon-llc/ABM8-272-T3/22472366). The only thing that we need to do in order to hook it up is to estimate the parasitic capacitance in order to make sure things work out. 
+So, I will go with whatever they said, which is the [ABM8-272-T3](https://www.digikey.com/en/products/detail/abracon-llc/ABM8-272-T3/22472366). The only thing that we need to do in order to hook it up is to estimate the parasitic capacitance in order to make sure things work out. In particular the capacititance of the crystal should be tuned based on the overall stray capacitance of the pcb.
+
+
+## Flash storage
+
+So as far as I understand the rp2040 needs external storage to work. This is fine, they provide a list of supported external flash storage to hold the program, but what we will need is a way to tell both the microcotroller and the flash if it is time to store a program or spit it out. The hardware design guide uses a couple of exposed pins. I think it is better to use either a pushbutton, or a switch (probably a pushbutton is best tbh)
+
+In fact my pushbutton ambitions were confirmed by looking at [raspi pico](https://learn.adafruit.com/adafruit-feather-rp2040-pico/pinouts#buttons-and-rst-pin-3084847) which uses a similar design. Perhaps we should get some inspiration from [its setup](https://github.com/adafruit/Adafruit-Feather-RP2040-PCB/blob/main/README.md) to design the keyboard's.
+
+The flash storage they use is large and we will keep it that way because I have no idea how complicated I want the code to be yet. Plus they tested it so great! It is [W25Q128JVS](https://www.digikey.com/en/products/detail/winbond-electronics/W25Q128JVSIQ/5803943) and it has a relatively small footprint. Though if this seems an issue down the line, we can go for something with less memory. Speaking of footprint, reading the datasheet, the S at the end stands for SOIC which is pretty large as a package but much easier to solder. We will see at the end what matters most I guess. The other alternative is the P which is a 6x5mm WSON package that doesn't have exposed pins. 
+
+The pushbuttons I want to use are [kmr2](https://www.littelfuse.com/products/switches/tactile-switches/kmr2) which appear to be a popular choice, and OH MAN they are satisfying and cute to press!
+
+Here is the final version 1. 
+![Keyboard Schematic V1](./media/v1.pdf)
+
