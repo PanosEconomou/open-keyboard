@@ -523,7 +523,7 @@
   "pcbnew": {
     "last_paths": {
       "idf": "",
-      "netlist": "v1-net.net",
+      "netlist": "",
       "plot": "",
       "specctra_dsn": "",
       "vrml": ""
@@ -648,7 +648,7 @@
         "uuid": "b97b13d9-a629-4a4f-9b39-f1265da20b0c"
       }
     ],
-    "used_designators": "J2",
+    "used_designators": "MX1-48,D48-95",
     "variants": []
   },
   "sheets": [

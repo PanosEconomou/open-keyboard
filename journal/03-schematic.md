@@ -1,4 +1,4 @@
-# Picking a PCB
+# Making the schematic
 
 Having decided on the Planck layout there are a couple of things to consider a bout PCBs. 
 
