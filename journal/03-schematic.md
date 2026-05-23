@@ -50,6 +50,8 @@ When it comes to connecting to the microcontroller we need to take special atten
 
 The hardware design guide gives some extra information on that and how to achieve it. In particular they say that behind the data pins there MUST be just ground otherwise all hell will break loose and we will all die. 
 
+There must be an electrostatic discharge protection circuit on the USB, which a lot of people use [USBLC6-2SC6](https://www.st.com/resource/en/datasheet/usblc6-2.pdf), typically you would need something larger, but I am actually going for small form factor. 
+
 ## Power
 
 Technically speaking the RP2040 needs two power sources. 3.3V and 1V. Thankfully it has an onboard voltage regulator from 3.3V to 1V so we only need a regulator from the 5V of the USB-C down to 3.3V. The hardware design guide suggests to use the [NCP1117](https://www.onsemi.com/pdf/datasheet/ncp1117-d.pdf) which is simple to wire and can provide up to 1A which is definitely more than enough for our purposes. I mean we are not even driving LEDs but even if we were there is no reason to care.
@@ -57,6 +59,10 @@ Technically speaking the RP2040 needs two power sources. 3.3V and 1V. Thankfully
 The voltage regulator comes in two packages. DPAC which is large and SOT which is small. The only real  difference seems to be how they handle heat. I genuinely don't think that we will have any reason to wory about the heat a 3.3V regulator from 5V would produce for driving a SINGLE measely microcontroller, but just in case, I checked the specs. There is no way we will draw more than 500 mA at 5V and apparently people feel comfortably using SOT (the tiny version) at that. 
 
 Another important consideration according to the schematics is to use decoupling capacitors. we basically want a 100nF capacitor between all ppower pins to be placed physical close to them. Basically the power supply creates so much magnetic field that if it starts oscillating widely it can literally affect the microcontroller. Adding a capacitor turns this into an LC circuit where the power supply fluctuations from induced currents are smoothed out, allowing the microcontroller to operate at a higher efficiency.  
+
+**UPDATE**: Turns out an NCP1117 is old and fragile and big. And while fiddling with the PCB I found out that there is little space for it. So let's move onto a different one. This [reddit response](https://www.reddit.com/r/PrintedCircuitBoard/comments/1mns8ue/review_request_rp2040_number_pad_pcb/)has some great advice and great reasons not to use the NCP1117.
+
+A good alternative is the [AP2112K-3.3TRG1](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746), it is more modern, functions with much smaller external resistance, I can still use 0402 capacitors. So we will replace that on the schematics.
 
 ## Crystal
 

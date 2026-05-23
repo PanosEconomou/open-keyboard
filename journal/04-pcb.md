@@ -17,9 +17,11 @@ Another important thing to consider is how to orient the switches. Here is the [
 
 I just realized I didn't set up anything at all! Let's figure it out. The overwhelming majority of people on [reddit](https://www.reddit.com/r/MechanicalKeyboards/comments/6oyxqt/which_diodes_can_i_use_help/) swear by [1N4148](https://www.vishay.com/docs/86455/1n4148ws.pdf) so why meddle with perfection. That said we might have to change the package based on the outline lead time and availability, but we'll see.
 
-## USB-C Terminal
+## USB-C 
 
 For USB-C we can go with a nice terminal that isn't too crazy. Turns out [this](https://jlcpcb.com/partdetail/Korean_HropartsElec-TYPE_C_31_M12/C165948) is a commonly used one. 
+
+It would be nice to place the microcontroller further away from the USB-C port, but for that we need to know what the best practices are for designing long USB-C trails. The [hardware design guideline](https://www.allpcb.com/blog/pcb-assembly/usb-c-connectors.html) can be helpful in that.
 
 ## Capacitors & Resistors
 
@@ -28,13 +30,22 @@ One main thing here is footprint. I would like the smallest possible footprint i
 For the resistor power rating we don't need much, so something around 60-100 mW should be waaaay more than enough.
 
 1. 1k [CRCW04021K00FKED](https://jlcpcb.com/partdetail/VishayIntertech-CRCW04021K00FKED/C71623)
-2. 5.1k [CRCW04025K10JNED](https://jlcpcb.com/partdetail/VishayIntertech-CRCW04025K10JNED/C482289) 
+2. 5.1k [CRCW04025K10JNED](https://jlcpcb.com/partdetail/VishayIntertech-CRCW04025K10JNED/C482289)
 3. 10k [CRCW040210K0FKEDC](https://jlcpcb.com/partdetail/VishayIntertech-CRCW040210K0FKEDC/C844714)
 4. 27 [CRCW040227R0FKED](https://jlcpcb.com/partdetail/VishayIntertech-CRCW040227R0FKED/C482122)
 
+
+For the capacitors I want to also pick 0402 packaging here are the ones I found
+
+1. 100n [0402B104J160CT](https://jlcpcb.com/partdetail/Walsin_TechCorp-0402B104J160CT/C387940)
+2. 15p [GRM1555C1H150FA01D](https://jlcpcb.com/partdetail/172911-GRM1555C1H150FA01D/C161530)
+3. 1u [GRM155Z71A105KE01D](https://jlcpcb.com/partdetail/548880-GRM155Z71A105KE01D/C528974)
 
 ## PCB Pushbuttons 
 
 We need some cool buttons to reset and program! I honestly want something that feels cool and premium. Unironically this [Ebay Seller](https://www.ebay.com/itm/335354104894) is showing them off. Though these may be too big.
 
 
+## Dimensions and such
+
+Another place where I got inspiration from was the [latest planck pcb](https://imgur.com/a/planck-pcb-rev-6-8gn3UQs) mostly to know how close I can really place the components to the margins of the board before having issues.
