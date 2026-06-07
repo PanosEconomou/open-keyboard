@@ -24,3 +24,11 @@ After looking at it for sometimes the main plan seems to be as follows.
 The thing that I am worried about is that it might sound really lound and my office mates might go crazy. So it may be worth it to add a layer of foam between the bottom plate and the pcb, or make the top plate out of some acrylic or other plastic, but this is something to figure out after the design. 
 
 The only material I would need to figure out now-ish is the case material since the thicknelss depends on it. 
+
+## Gasket Mount 
+
+Turns out that my dreams for a cool silent keyboard would be impossible if I were to use that strategy. People say that mounting directly to the bottom plate creates a cavity that amplifies the sound considerably. Apparently a good way to do solve this issue is to avoid screws all together and use [gasket mounting](https://geekhack.org/index.php?topic=101731.0).
+
+I created a design (without even a USB port) but at least this is an interation in the right direction
+![Gasket V1](./media/r1.png)
+By the way this was rendered in Blender.
