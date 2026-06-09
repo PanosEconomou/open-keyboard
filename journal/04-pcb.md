@@ -49,3 +49,15 @@ We need some cool buttons to reset and program! I honestly want something that f
 ## Dimensions and such
 
 Another place where I got inspiration from was the [latest planck pcb](https://imgur.com/a/planck-pcb-rev-6-8gn3UQs) mostly to know how close I can really place the components to the margins of the board before having issues.
+
+
+## Daughter Board
+
+I have been thinking a lot about using a daughter board so that I create a gasket mount keyboard. This effectively means that the ESD protection circuit is going to be on a separate board that will be connected through some kind of connector to the main one. There is a [standard](https://unified-daughterboard.github.io/#/?id=unified-daughterboard) for designing these. One thing we need to figure out is a connector. 
+
+For the connector we can pick [this one](https://www.tti.com/content/ttiinc/en/apps/part-detail.html?partsNumber=78171-0004&mfgShortname=MOL&utm=PNC2024&utm_term=78171-0004&gad_source=1&gad_campaignid=20878198023&gbraid=0AAAAADvyBAaEv3iyJDeA7ds4Y9j64nk2-&gclid=Cj0KCQjw0JnRBhDJARIsALobnXbR0HXZ9DC4Zgl9cE6z_M0I0OIV1WpRK8HaF-ypCOaf_nP40Ch_FPUaAkOzEALw_wcB) which is low profile and admitted by the standard we were talking about. 
+
+In fact I think I will just fork the universal repo and see.  
+
+
+
