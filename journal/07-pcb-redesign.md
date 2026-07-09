@@ -20,12 +20,23 @@ Let's assemble some candidates
 - [5051101892](https://jlcpcb.com/partdetail/MOLEX-5051101892/C3036269)
 - [AFC01-S18FCA-00](https://jlcpcb.com/partdetail/JUSHUO-AFC01_S18FCA00/C262666)
 - [XW05200-18](https://jlcpcb.com/partdetail/MINTRON-XW0520018/C376063)
-- [TF31-18S-0.5SH(800)](https://jlcpcb.com/partdetail/HRS_Hirose-TF31_18S_0_5SH_800/C3168422)
+- [TF31-18S-0.5SH(800)](https://jlcpcb.com/partdetail/HRS_Hirose-TF31_18S_0_5SH_800/C3168422) (SELECTED)
 
+Out of these 4 the most trusted companies are Molex (the first) and Hirose (the last). The last one is 1.75mm in thickness while the first one is 1.9mm in thickness. In addition the last one allows for an FFC design with a little lip so that it withstands more horizontal force than the first. I hope its vertical force performance is just as good, but it's worth checking before I commit. 
 
 ## Track width settings 
 
 Now that I get to redesign the board I think I should pay more attention to things like track widths and whatnot. Before I just almost took things to be defaults, but honestly this time I might just use smaller ones. Like everything in say raspi pico has signal lines to be smaller than 1mm and I was kind of afraid to figure it out. Let's try something new now! 
+
+Kicad has a [guide](https://docs.oshpark.com/design-tools/kicad/kicad-design-rules/) that talks about what kind of DRC is preferrable for this type of boards and how to figure out in one's particular case. I can use that. But I can't trust it. It needs to be specific to the RP2040.
+
+The hardware design guide for the RP2040 does not say much about track widht, so we can check the Raspi Zero to see what's up. They have many differnet trace widths, but honestly for GPIO Pins the trace widths are roughly 0.2mm with 0.2 mm clearance at the DRC. I checked to see in JLC's manufacturing guidelines and it's well within limits. Actually, let's try 0.15 mm width and clearance because the pins in the RP2040 are so freaking dense, I am having issues hahahaa. Here are [JLC Manufacturing capabilities](https://jlcpcb.com/capabilities/Capabilities) 
+
+For the QSPI pins though, it matters more. Impedance matching plays a crucial role there, but placing the flash memory close to the rp2040 kinda makes this less of a problem. [People recommend](https://pcbartists.com/design/embedded/rp2040-pcb-design/?srsltid=AfmBOopy-tV5PJuMK0xM9psxQ-cMWNzyJnGVsG-zoGCQsBFAAl-oED9d) a trace of around 0.2 mm with the same clearance where none of the traces are more then 1 inch in length and the clock trace should be the longest. Another important consideration is to use a solid ground plane to connect the flash and microcontroller grounds.  
+
+[This article](https://www.allpcb.com/blog/pcb-knowledge/the-ultimate-guide-to-pcb-trace-width-for-beginners.html) gives a cool introduction to figuring out how to select the correct trace dimensions. So we can use it for power. The maximum current we are ever expecting to draw would be around 40mA. In terms of temperature the blog suggests to account for 10 degrees above room temperature, so might as well do that. The thing is that the power consumption is so low, that whatever trace width I pick it won't matter. So might as well design it for 1A peak consumption just in case in the future I edit this to add a couple of LEDs. KiCad's calculator gives me a 0.3 mm trace width for these specifications, and 0.2 mm gaps. 
+
+Now the hardest one to do is USB. We can use a calculator that exists in KiCad such that we achieve 90 Ω resistance. This is the **Transmision Line Calculator** I entered all the parameters of the board and I found out that it can't be set to 90 Ohms for a 2-layer board because the thickness is too small. A quick google search shows that we can't actually achieve USBC high speed at a 2-layer board anyway, so it is fine to go 20% over as we will still retain full speed. Doing this we get a 0.25 mm Width with 0.15 mm clearance at roughly 10 mm length for 115.5 Ω differential resistance. 
 
 ## Bending and angles
 
