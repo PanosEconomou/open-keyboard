@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 3,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -617,7 +617,7 @@
         "pattern": "VBUS"
       },
       {
-        "netclass": "+1V1",
+        "netclass": "Power",
         "pattern": "+1V1"
       },
       {
@@ -630,19 +630,11 @@
       },
       {
         "netclass": "GPIO",
-        "pattern": "+3V3"
-      },
-      {
-        "netclass": "GPIO",
         "pattern": "/RPD+"
       },
       {
         "netclass": "GPIO",
         "pattern": "/RPD-"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "+1V1"
       },
       {
         "netclass": "GPIO",
@@ -778,7 +770,7 @@
         "uuid": "b97b13d9-a629-4a4f-9b39-f1265da20b0c"
       }
     ],
-    "used_designators": "SW2-3,U2,#PWR27-28,J2-3",
+    "used_designators": "#PWR29-31,H1-3",
     "variants": []
   },
   "sheets": [

@@ -46,3 +46,10 @@ Another interesting thing is that apparently pcb cnc machines hate making sharp 
 
 I decided that the old buttons were too big and clunky and honestly there is no reason to make them accessible outside the keyboard now, so mught as well try for something smaller that can fit in a tinier board. Here is a new one from some known company [SKRPAME010](https://jlcpcb.com/partdetail/ALPSALPINE-SKRPAME010/C19724063).
 
+## New flash
+
+Here is a picture with the full flash and kind of the best routing I could do
+
+![flash](./media/flash.png)
+
+The component at the center with thermal pad 9 is the flash memory. It's 2MB and honestly there is no keyboard firmware that will be 16MB. It also causes the whole board to be shifted a bit awkwardly, so we will change that. Raspberry Pi Pico uses a [W25Q16JVUXIQ](https://jlcpcb.com/partdetail/WinbondElec-W25Q16JVUXIQ/C2843335) which is a 2MB chip and honestly is still overkill in terms of capacity, but it comes in a 2x3 mm package!
