@@ -32,7 +32,7 @@ Kicad has a [guide](https://docs.oshpark.com/design-tools/kicad/kicad-design-rul
 
 The hardware design guide for the RP2040 does not say much about track widht, so we can check the Raspi Zero to see what's up. They have many differnet trace widths, but honestly for GPIO Pins the trace widths are roughly 0.2mm with 0.2 mm clearance at the DRC. I checked to see in JLC's manufacturing guidelines and it's well within limits. Actually, let's try 0.15 mm width and clearance because the pins in the RP2040 are so freaking dense, I am having issues hahahaa. Here are [JLC Manufacturing capabilities](https://jlcpcb.com/capabilities/Capabilities) 
 
-For the QSPI pins though, it matters more. Impedance matching plays a crucial role there, but placing the flash memory close to the rp2040 kinda makes this less of a problem. [People recommend](https://pcbartists.com/design/embedded/rp2040-pcb-design/?srsltid=AfmBOopy-tV5PJuMK0xM9psxQ-cMWNzyJnGVsG-zoGCQsBFAAl-oED9d) a trace of around 0.2 mm with the same clearance where none of the traces are more then 1 inch in length and the clock trace should be the longest. Another important consideration is to use a solid ground plane to connect the flash and microcontroller grounds.  
+For the QSPI pins though, it matters more. Impedance matching plays a crucial role there, but placing the flash memory close to the rp2040 kinda makes this less of a problem. [People recommend](https://pcbartists.com/design/embedded/rp2040-pcb-design/?srsltid=AfmBOopy-tV5PJuMK0xM9psxQ-cMWNzyJnGVsG-zoGCQsBFAAl-oED9d) a trace of around 0.15 mm with 0.2 mm clearance where none of the traces are more then 1 inch in length and the clock trace should be the longest. Another important consideration is to use a solid ground plane to connect the flash and microcontroller grounds.  
 
 [This article](https://www.allpcb.com/blog/pcb-knowledge/the-ultimate-guide-to-pcb-trace-width-for-beginners.html) gives a cool introduction to figuring out how to select the correct trace dimensions. So we can use it for power. The maximum current we are ever expecting to draw would be around 40mA. In terms of temperature the blog suggests to account for 10 degrees above room temperature, so might as well do that. The thing is that the power consumption is so low, that whatever trace width I pick it won't matter. So might as well design it for 1A peak consumption just in case in the future I edit this to add a couple of LEDs. KiCad's calculator gives me a 0.3 mm trace width for these specifications, and 0.2 mm gaps. 
 
@@ -41,3 +41,8 @@ Now the hardest one to do is USB. We can use a calculator that exists in KiCad s
 ## Bending and angles
 
 Another interesting thing is that apparently pcb cnc machines hate making sharp angles, even though in my understanding everything is a sharp angle in most PCBs I have seen. Let's explore what kind of angles we can put here. 
+
+## New Buttons
+
+I decided that the old buttons were too big and clunky and honestly there is no reason to make them accessible outside the keyboard now, so mught as well try for something smaller that can fit in a tinier board. Here is a new one from some known company [SKRPAME010](https://jlcpcb.com/partdetail/ALPSALPINE-SKRPAME010/C19724063).
+

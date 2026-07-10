@@ -527,13 +527,13 @@
       },
       {
         "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.15,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "GPIO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(201, 131, 175)",
         "priority": 0,
         "schematic_color": "rgb(201, 131, 175)",
         "track_width": 0.15,
@@ -549,7 +549,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "pcb_color": "rgb(255, 81, 74)",
+        "pcb_color": "rgb(255, 93, 81)",
         "priority": 3,
         "schematic_color": "rgb(255, 93, 81)",
         "track_width": 0.3,
@@ -565,10 +565,10 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "QSPI",
-        "pcb_color": "rgb(133, 225, 69)",
+        "pcb_color": "rgb(173, 225, 114)",
         "priority": 2,
         "schematic_color": "rgb(173, 225, 114)",
-        "track_width": 0.2,
+        "track_width": 0.15,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
@@ -581,7 +581,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
-        "pcb_color": "rgb(52, 149, 255)",
+        "pcb_color": "rgb(56, 138, 255)",
         "priority": 1,
         "schematic_color": "rgb(56, 138, 255)",
         "track_width": 0.25,
@@ -617,7 +617,7 @@
         "pattern": "VBUS"
       },
       {
-        "netclass": "Power",
+        "netclass": "+1V1",
         "pattern": "+1V1"
       },
       {
@@ -627,6 +627,26 @@
       {
         "netclass": "GPIO",
         "pattern": "COL1|COL2|COL3|COL4|COL5|COL6|COL7|COL8|COL9|COL10|COL11|COL12|ROW1|ROW2|ROW3|ROW4"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/RPD+"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/RPD-"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "+1V1"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/RESET"
       }
     ]
   },
@@ -758,7 +778,7 @@
         "uuid": "b97b13d9-a629-4a4f-9b39-f1265da20b0c"
       }
     ],
-    "used_designators": "U2,J2-3",
+    "used_designators": "SW2-3,U2,#PWR27-28,J2-3",
     "variants": []
   },
   "sheets": [
