@@ -7,6 +7,14 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Pankeyk")
+		(date "2026-07-11")
+		(rev "0")
+		(company "8-bit stuidos physics department")
+		(comment 1 "Keyboard Matrix")
+		(comment 2 "PCB")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -89,6 +97,7 @@
 		)
 		(capping no)
 		(filling no)
+		(grid_origin 35.71878 59.5313)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -1063,6 +1072,7 @@
 		(property "Value" "choc_stab"
 			(at 0 6.5 180)
 			(layer "Cmts.User")
+			(hide yes)
 			(uuid "a07b0d23-14df-426a-9ca0-2ca315cb6b30")
 			(effects
 				(font
@@ -1135,7 +1145,13 @@
 		(path "/d48f6d2f-c8d7-4353-9af1-9abe4e2ffae7")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -18 -8.5)
@@ -1969,39 +1985,6 @@
 			(layer "Edge.Cuts")
 			(uuid "8e0c5d2d-c138-4894-9279-9a07d60f9a77")
 		)
-		(fp_text user "18x17 spacing"
-			(at 0 -7.6 0)
-			(layer "Dwgs.User")
-			(uuid "30593fd5-250f-4519-abdb-ddcdc48bad7d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "Eco2.Use: plate cuts"
-			(at 0 8 0)
-			(layer "Cmts.User")
-			(uuid "b77d40fd-852c-45a3-9e3d-05138bfac9e7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "19.05 spacing"
-			(at 0 -8.7 0)
-			(layer "Eco1.User")
-			(uuid "4ed77680-e5a4-49fa-b4da-29c26a5d3999")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EasyEDA_Step/stabilizer_2u.step"
 			(offset
@@ -2603,6 +2586,12 @@
 		(path "/8d852067-e089-496b-b429-79ef57189bef")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4685,6 +4674,12 @@
 		(path "/c83be75c-57a9-4cbd-8e64-c16d502da697")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5696,6 +5691,12 @@
 		(path "/1bda2e1d-5b58-4616-ada9-485e371e458d")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6707,6 +6708,12 @@
 		(path "/f11e0141-cf48-4d16-83b1-179723d3812a")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7361,6 +7368,12 @@
 		(path "/389ca61b-38ef-4d2c-917e-7330e6920110")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7921,7 +7934,7 @@
 		(at 110.132905 113.704783 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D28"
+		(property "Reference" "D29"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -8254,7 +8267,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D28-A)")
+			(net "Net-(D29-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "65b5a820-1c51-453d-9f1e-4c382803461f")
@@ -8729,6 +8742,12 @@
 		(path "/6dd83b32-51f4-42b3-9eb2-d6642cf9aaa6")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9383,6 +9402,12 @@
 		(path "/ed76f046-0a86-48e9-b9b5-a9204464f3e4")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9858,7 +9883,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D30-A)")
+			(net "Net-(D25-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "db3f4bcd-d241-4f2f-99cf-1668b888d53b")
@@ -9867,7 +9892,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D30-A)")
+			(net "Net-(D25-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "ffd7a047-a578-4558-90ae-3ca0307c7847")
@@ -9877,7 +9902,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D30-A)")
+			(net "Net-(D25-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "79118cac-95a6-450d-9b76-99a60e9f833b")
@@ -10037,6 +10062,12 @@
 		(path "/fb14af56-63a3-4526-9af0-ba98123cce73")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10512,7 +10543,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D29-A)")
+			(net "Net-(D30-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "1119d305-49f3-4987-97fc-3ff23e5b771c")
@@ -10521,7 +10552,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D29-A)")
+			(net "Net-(D30-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "9cc03815-3f3c-47c8-8950-11a359e1197c")
@@ -10531,7 +10562,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D29-A)")
+			(net "Net-(D30-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "01753a66-77da-48ca-917b-1a268b529ee8")
@@ -10691,6 +10722,12 @@
 		(path "/f3ae74b2-94ea-4ac0-a2f3-149e8d5e8083")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11345,6 +11382,12 @@
 		(path "/2ebc6fe6-036d-4b4a-a11b-17e1f09c7850")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11820,7 +11863,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D24-A)")
+			(net "Net-(D23-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "ccb2eb42-5b93-4402-b43e-e50ca2b14391")
@@ -11829,7 +11872,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D24-A)")
+			(net "Net-(D23-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "d1a57987-b426-4a24-bf0b-daedc7dfa678")
@@ -11839,7 +11882,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D24-A)")
+			(net "Net-(D23-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "520dad55-7b7c-4ab1-a589-c56979a43965")
@@ -12262,7 +12305,7 @@
 		(at 262.532857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D24"
+		(property "Reference" "D23"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -12595,7 +12638,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D24-A)")
+			(net "Net-(D23-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "67f974df-54f9-4a02-9769-da18feabc511")
@@ -12713,6 +12756,12 @@
 		(path "/8e12ebd8-d08d-44c1-9c08-6f8a1ec16c1a")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13367,6 +13416,12 @@
 		(path "/41e6875b-401e-41db-b23c-296f23b233a1")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14284,7 +14339,7 @@
 		(at 224.432857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D22"
+		(property "Reference" "D21"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -14617,7 +14672,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D22-A)")
+			(net "Net-(D21-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "46c324ae-a895-437c-83c9-86fea9aca73f")
@@ -15092,6 +15147,12 @@
 		(path "/469cf784-232e-43ca-bee5-48bc93de09dd")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15746,6 +15807,12 @@
 		(path "/30fb6ba2-47c4-49aa-b377-bc00c5db358a")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16221,7 +16288,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D21-A)")
+			(net "Net-(D20-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "2202dacb-6af5-4b66-a11b-939af5179b61")
@@ -16230,7 +16297,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D21-A)")
+			(net "Net-(D20-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "85005d2e-8c89-4598-ae8d-14ab7dd1dafa")
@@ -16240,7 +16307,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D21-A)")
+			(net "Net-(D20-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "228f853e-7c51-46ef-90dc-e95d5e7f4c34")
@@ -16400,6 +16467,12 @@
 		(path "/43a9faba-60f2-415b-aec5-0aa8eaa62194")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17054,6 +17127,12 @@
 		(path "/e606e56a-d450-4b82-a7b8-28d806e30982")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17708,6 +17787,12 @@
 		(path "/d8c1ba52-ec4a-454a-80d7-cb17e0dba4a5")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18183,7 +18268,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D20-A)")
+			(net "Net-(D19-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "28074e56-916d-41de-8d60-683e9aa31ea0")
@@ -18192,7 +18277,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D20-A)")
+			(net "Net-(D19-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "1161c640-e37c-4809-92ce-f6adfa215fd3")
@@ -18202,7 +18287,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D20-A)")
+			(net "Net-(D19-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "29fa9945-d162-4ccc-84fe-05aca92285eb")
@@ -18362,6 +18447,12 @@
 		(path "/07b3e84c-4542-4fe8-98a4-3ce3eb213695")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18837,7 +18928,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D22-A)")
+			(net "Net-(D21-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "7e6754dd-b48a-4f60-a3ca-1f7b4e303e3b")
@@ -18846,7 +18937,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D22-A)")
+			(net "Net-(D21-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "9a815bd7-a399-48eb-b97d-701598374874")
@@ -18856,7 +18947,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D22-A)")
+			(net "Net-(D21-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "cc244e59-2ec2-4be3-bf8c-0c5a62109620")
@@ -19016,6 +19107,12 @@
 		(path "/d9219285-f13a-4199-8c6b-43a5f870dd15")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20741,6 +20838,12 @@
 		(path "/4757fe58-e66a-4d34-bb7f-d1e8af025b44")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21216,7 +21319,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D19-A)")
+			(net "Net-(D18-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "f22e10f5-a145-44b2-bbff-c8c05f687fbe")
@@ -21225,7 +21328,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D19-A)")
+			(net "Net-(D18-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "26ab2703-2c38-45b8-8f70-85fef553000e")
@@ -21235,7 +21338,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D19-A)")
+			(net "Net-(D18-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "814cb86b-f173-4551-b248-cec759e92c82")
@@ -21301,7 +21404,7 @@
 		(at 52.982857 113.704783 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D25"
+		(property "Reference" "D26"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -21634,7 +21737,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D25-A)")
+			(net "Net-(D26-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "02a168a6-7ec8-4353-ada5-74a5d88aa166")
@@ -22109,6 +22212,12 @@
 		(path "/ba5aee50-1193-48f9-a811-03f4c6d47c3d")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22669,7 +22778,7 @@
 		(at 167.282857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D19"
+		(property "Reference" "D18"
 			(at -0.61875 1.675625 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -23002,7 +23111,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D19-A)")
+			(net "Net-(D18-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "e747e596-f904-4000-b84d-639c9e3aec71")
@@ -24062,6 +24171,12 @@
 		(path "/574ca7f4-414d-4371-873f-35d99d42ae6b")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24537,7 +24652,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D25-A)")
+			(net "Net-(D26-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "6754539c-73f8-47c1-bb28-aaf1a7562b14")
@@ -24546,7 +24661,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D25-A)")
+			(net "Net-(D26-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "65cfcd86-d77a-452e-bfc6-4fea400cff87")
@@ -24556,7 +24671,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D25-A)")
+			(net "Net-(D26-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "e7d42b68-f71a-47c0-8cd1-3fa6dd4d30ce")
@@ -24716,6 +24831,12 @@
 		(path "/007931c6-caa1-460c-9ce5-4e0a3c6023d4")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25276,7 +25397,7 @@
 		(at 148.232733 82.907257 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D18"
+		(property "Reference" "D24"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -25609,7 +25730,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D18-A)")
+			(net "Net-(D24-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "6cca6880-52c3-4bbb-ae95-d3622d1b5e95")
@@ -25727,6 +25848,12 @@
 		(path "/ba423615-5a4e-4255-9a52-d6f716e751ff")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26202,7 +26329,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D18-A)")
+			(net "Net-(D24-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "168af2a6-0970-4f2b-b046-ed2a299e5bf4")
@@ -26211,7 +26338,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D18-A)")
+			(net "Net-(D24-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "f7d3efad-fcf8-4e35-ab26-bbe68d775910")
@@ -26221,7 +26348,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D18-A)")
+			(net "Net-(D24-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "a8e2041a-5a81-4cbf-9de1-8c62defcedd7")
@@ -26381,6 +26508,12 @@
 		(path "/96fb3270-4a5d-47b0-9582-d3d7ad81bbfd")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28106,6 +28239,12 @@
 		(path "/767cd31f-5fb7-40d6-8490-a74822f72196")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29474,6 +29613,12 @@
 		(path "/f7f42352-1bd8-4269-9cd4-3c1f68bd9574")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30485,6 +30630,12 @@
 		(path "/9db26a83-0a49-4a7d-b1f7-78679fcf2879")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31045,7 +31196,7 @@
 		(at 205.382857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D21"
+		(property "Reference" "D20"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -31378,7 +31529,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D21-A)")
+			(net "Net-(D20-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "0f3d90b0-f4c0-425e-9550-68fb24851813")
@@ -31853,6 +32004,12 @@
 		(path "/4015563b-1dfd-4873-9ff6-fd80dd0942c4")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32507,6 +32664,12 @@
 		(path "/075e7a9b-9317-45ec-83a2-8737346b39d9")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33161,6 +33324,12 @@
 		(path "/d3ed9c9b-6fa5-44ad-b517-a0bbf6fa3e7a")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33636,7 +33805,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D23-A)")
+			(net "Net-(D22-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "b074d337-8398-448c-b746-a5b551c9e014")
@@ -33645,7 +33814,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D23-A)")
+			(net "Net-(D22-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "7150b54f-2e3e-468c-941a-8c7c9e12962b")
@@ -33655,7 +33824,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D23-A)")
+			(net "Net-(D22-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "8f5d8e46-b70a-4382-947d-18ee60d6de0e")
@@ -33815,6 +33984,12 @@
 		(path "/b984ed60-d66d-4148-a47b-73c093c67c64")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34469,6 +34644,12 @@
 		(path "/0ee5553e-0e3d-4ce3-b31b-4faf572b3a52")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35123,6 +35304,12 @@
 		(path "/d811034a-7656-49bd-9154-582f7d3880ca")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35777,6 +35964,12 @@
 		(path "/91994a8b-e2ce-4727-b445-8bbb038abfa6")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36431,6 +36624,12 @@
 		(path "/c9285236-747b-40cf-a595-611078254605")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37348,7 +37547,7 @@
 		(at 148.232688 113.697396 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D30"
+		(property "Reference" "D25"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -37681,7 +37880,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D30-A)")
+			(net "Net-(D25-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "3f199579-afb5-4d48-bd82-48599e3ba4d4")
@@ -38062,7 +38261,7 @@
 		(at 186.332857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D20"
+		(property "Reference" "D19"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -38395,7 +38594,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D20-A)")
+			(net "Net-(D19-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "1d7c1dd9-f930-473e-af45-318f5643e2a8")
@@ -38513,6 +38712,12 @@
 		(path "/53c4bd3f-6451-48de-b7a0-5588a5172de1")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39167,6 +39372,12 @@
 		(path "/142b0d9b-6409-4e6a-9de3-68360feff794")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39642,7 +39853,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D27-A)")
+			(net "Net-(D28-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "88eb4349-a9ca-4b4d-8244-6d93f808319f")
@@ -39651,7 +39862,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D27-A)")
+			(net "Net-(D28-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "79502154-f253-4fe6-8c17-aaf32037f672")
@@ -39661,7 +39872,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D27-A)")
+			(net "Net-(D28-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "52ed1c25-6e2b-4f83-92b0-834a533e452d")
@@ -40535,6 +40746,12 @@
 		(path "/a44b39bb-e8d2-4530-aa56-4cf1aead4fe0")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41010,7 +41227,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D28-A)")
+			(net "Net-(D29-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "20fff3e8-9277-49bc-a828-54d1fbfcee25")
@@ -41019,7 +41236,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D28-A)")
+			(net "Net-(D29-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "bda7529e-4828-43c6-987a-ea81d38c307e")
@@ -41029,7 +41246,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D28-A)")
+			(net "Net-(D29-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "803e9011-015d-4f6a-beb9-3dd9637cfe18")
@@ -41189,6 +41406,12 @@
 		(path "/963ed9e9-b9df-4f58-95e2-ec38386dfa08")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42200,6 +42423,12 @@
 		(path "/3d75a678-c111-4010-9616-c9ea5cf97007")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42760,7 +42989,7 @@
 		(at 91.082889 113.704783 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D27"
+		(property "Reference" "D28"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -43093,7 +43322,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D27-A)")
+			(net "Net-(D28-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "9d288a54-9ac6-4b43-aa7c-4e7ea47bc5bd")
@@ -43211,6 +43440,12 @@
 		(path "/0768ab2d-147a-40f0-b8ff-5f68b6966c9e")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43771,7 +44006,7 @@
 		(at 243.482857 82.748507 -90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D23"
+		(property "Reference" "D22"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -44104,7 +44339,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D23-A)")
+			(net "Net-(D22-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "b057ed5c-a1f1-43b0-88f8-2e73f1969085")
@@ -44842,7 +45077,7 @@
 		(at 72.032873 113.704783 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D26"
+		(property "Reference" "D27"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -45175,7 +45410,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D26-A)")
+			(net "Net-(D27-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "2b2a1088-2e34-4555-ac33-32b13e4983ee")
@@ -45293,6 +45528,12 @@
 		(path "/b8817f4f-cae2-4981-a2de-c51f0cd330a5")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45947,6 +46188,12 @@
 		(path "/a44223e4-5bf6-439a-9799-df628fea7297")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46507,7 +46754,7 @@
 		(at 129.182921 113.704783 90)
 		(descr "SOD-323")
 		(tags "SOD-323")
-		(property "Reference" "D29"
+		(property "Reference" "D30"
 			(at 0 1.85 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -46840,7 +47087,7 @@
 			(size 0.6 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D29-A)")
+			(net "Net-(D30-A)")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "c9708c49-897b-4df4-8890-61ceae04d8c6")
@@ -48029,6 +48276,12 @@
 		(path "/463dcfe1-3765-4e66-83b2-beb4f9dd68a9")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48504,7 +48757,7 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(D26-A)")
+			(net "Net-(D27-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "ba670724-f9d5-47aa-b523-c275510d8373")
@@ -48513,7 +48766,7 @@
 			(at 5.635 2.54 180)
 			(size 1.65 2.5)
 			(layers "B.Cu")
-			(net "Net-(D26-A)")
+			(net "Net-(D27-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "b30f6a2b-4a1a-4b58-af48-0678bf5f693d")
@@ -48523,7 +48776,7 @@
 			(size 2.55 2.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1)
-			(net "Net-(D26-A)")
+			(net "Net-(D27-A)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "a569cf9f-6352-4d41-b43c-34c1c7f62b21")
@@ -49040,6 +49293,12 @@
 		(path "/23c5284f-f54d-4c61-8966-38771df2d8e0")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49614,6 +49873,7 @@
 		(property "Value" "MX_SW_HS"
 			(at 0 0 180)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "764a38b3-c6b7-4492-94ac-543363744aec")
 			(effects
 				(font
@@ -49694,6 +49954,12 @@
 		(path "/4aeba358-cb97-4554-bbdb-efe8b69f0a26")
 		(sheetname "/")
 		(sheetfile "matrix.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50986,14 +51252,6 @@
 		(uuid "eadc91da-23cd-4a2a-a265-b32b7e846a52")
 	)
 	(segment
-		(start 157.757888 122.179792)
-		(end 157.75768 122.179584)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW4")
-		(uuid "01c14801-6f09-4817-8d35-f0902d2aa319")
-	)
-	(segment
 		(start 135.37762 99.904833)
 		(end 136.17762 99.104833)
 		(width 0.2)
@@ -51050,14 +51308,6 @@
 		(uuid "44d87c87-72fc-4d0b-bde8-7a67b86e19d9")
 	)
 	(segment
-		(start 186.333071 122.17969)
-		(end 186.332969 122.179792)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW4")
-		(uuid "4e753a1b-187e-4328-a33d-a072f8186ac8")
-	)
-	(segment
 		(start 150.018624 109.05138)
 		(end 150.018624 112.662796)
 		(width 0.2)
@@ -51096,14 +51346,6 @@
 		(layer "B.Cu")
 		(net "ROW4")
 		(uuid "8f87d35d-86c0-4901-ae41-17f84242c050")
-	)
-	(segment
-		(start 129.183129 122.179584)
-		(end 129.182921 122.179792)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW4")
-		(uuid "a6e0cad5-3302-4f55-bc23-bbb00995a327")
 	)
 	(segment
 		(start 146.252224 105.96407)
@@ -51146,28 +51388,12 @@
 		(uuid "8ca209d1-fa4d-4f31-a7f1-bfdf9003f7db")
 	)
 	(segment
-		(start 110.132905 128.367095)
-		(end 109.75375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D40-A)")
-		(uuid "dcf79831-711d-4e1c-9210-035642084c07")
-	)
-	(segment
 		(start 129.214753 74.85228)
 		(end 129.214753 72.007253)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D5-A)")
 		(uuid "677eae60-97c5-44c3-80ce-bf336c96baba")
-	)
-	(segment
-		(start 129.214753 72.007253)
-		(end 128.80375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D5-A)")
-		(uuid "82f703b7-2bc4-4a55-b9a5-11f0e61c1f29")
 	)
 	(segment
 		(start 118.90375 74.13625)
@@ -51338,22 +51564,6 @@
 		(uuid "43567843-d0f9-4bae-9454-7f2863752168")
 	)
 	(segment
-		(start 148.232688 76.984329)
-		(end 148.264737 76.95228)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW1")
-		(uuid "522fc74d-ed24-4b2b-904d-3dd4b9b01f12")
-	)
-	(segment
-		(start 262.564513 76.952408)
-		(end 262.564641 76.95228)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW1")
-		(uuid "538f8b92-ce8d-40b2-a5e9-a2a16b29ea52")
-	)
-	(segment
 		(start 148.78964 106.413411)
 		(end 151.418627 109.042398)
 		(width 0.2)
@@ -51418,14 +51628,6 @@
 		(uuid "edb80cae-c961-4d92-8a5c-f4bc72049ce5")
 	)
 	(segment
-		(start 72.032873 71.975373)
-		(end 71.65375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D2-A)")
-		(uuid "15aa0f42-8ef5-43e9-a59b-87cb9921ee39")
-	)
-	(segment
 		(start 72.032873 74.852408)
 		(end 72.032873 71.975373)
 		(width 0.2)
@@ -51442,36 +51644,12 @@
 		(uuid "01d41c85-4c8f-4aa5-89fa-5813686f4243")
 	)
 	(segment
-		(start 224.433001 128.366999)
-		(end 224.05375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D45-A)")
-		(uuid "a5c0856e-56fe-4064-820d-9809e8a400e2")
-	)
-	(segment
 		(start 243.514657 74.85228)
 		(end 243.514657 72.007157)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D11-A)")
 		(uuid "5bee08fd-51f8-43c3-9f54-be7dc0355528")
-	)
-	(segment
-		(start 243.514657 72.007157)
-		(end 243.10375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D11-A)")
-		(uuid "e0fab4e0-e65a-4175-af93-84815bfd4c26")
-	)
-	(segment
-		(start 186.332969 128.367031)
-		(end 185.95375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D43-A)")
-		(uuid "3cfa6be9-7e4e-42e9-a640-f062e6447501")
 	)
 	(segment
 		(start 186.332969 124.279792)
@@ -51522,14 +51700,6 @@
 		(uuid "a50b90c2-0a46-4ac6-bc9a-c375dcf6f011")
 	)
 	(segment
-		(start 72.032873 128.367127)
-		(end 71.65375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D38-A)")
-		(uuid "783723d5-189c-49fc-be7f-2c708d5990b8")
-	)
-	(segment
 		(start 72.032873 124.27969)
 		(end 72.032873 128.367127)
 		(width 0.2)
@@ -51544,14 +51714,6 @@
 		(layer "B.Cu")
 		(net "Net-(D8-A)")
 		(uuid "5a57f914-9c65-46d8-bd94-410b9864fac7")
-	)
-	(segment
-		(start 186.364705 72.007205)
-		(end 185.95375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D8-A)")
-		(uuid "98b4e538-b82a-44f3-9a15-176504f2795e")
 	)
 	(segment
 		(start 176.05375 74.13625)
@@ -51602,22 +51764,6 @@
 		(uuid "18784392-9f00-4c88-bd01-f3978c6452c9")
 	)
 	(segment
-		(start 167.314721 72.007221)
-		(end 166.90375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D7-A)")
-		(uuid "77f2d8e5-d57e-408f-9c7e-d963a69fe2b5")
-	)
-	(segment
-		(start 72.032857 90.267143)
-		(end 71.65375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D14-A)")
-		(uuid "c45e8638-b725-4ca2-ba68-4df88eb92945")
-	)
-	(segment
 		(start 72.032857 83.798506)
 		(end 72.032857 90.267143)
 		(width 0.2)
@@ -51664,14 +51810,6 @@
 		(layer "B.Cu")
 		(net "COL2")
 		(uuid "8303a6fe-e470-4bed-ac8d-c023b378d051")
-	)
-	(segment
-		(start 91.082889 71.975389)
-		(end 90.70375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D3-A)")
-		(uuid "53d9bec8-cd24-48a7-be9c-578d856d0541")
 	)
 	(segment
 		(start 91.082889 74.852408)
@@ -51802,28 +51940,12 @@
 		(uuid "ec0569b1-a927-4cee-9e1e-2ed2abb63d6b")
 	)
 	(segment
-		(start 52.982857 114.754783)
-		(end 52.982874 114.754766)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW3")
-		(uuid "fe5b685e-caed-45a2-95e7-25a473bfa9a2")
-	)
-	(segment
-		(start 110.132905 110.075405)
-		(end 109.75375 109.69625)
+		(start 91.082889 112.654783)
+		(end 91.082889 110.075389)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D28-A)")
-		(uuid "3072ec98-d9ae-44d9-9e87-9a7714279e2a")
-	)
-	(segment
-		(start 110.132905 112.654783)
-		(end 110.132905 110.075405)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D28-A)")
-		(uuid "5b77b129-2f5b-4367-a347-6de3a19e82b9")
+		(uuid "3c4810b8-879a-4929-acf5-0e5c1b5e0944")
 	)
 	(segment
 		(start 205.382985 112.654783)
@@ -51834,28 +51956,12 @@
 		(uuid "00d9243e-80b1-43ce-9692-3282b8f4f1ca")
 	)
 	(segment
-		(start 205.382985 110.075485)
-		(end 205.00375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D33-A)")
-		(uuid "503780cc-824f-400e-8248-e80df98d8ba3")
-	)
-	(segment
 		(start 224.433001 112.654783)
 		(end 224.433001 110.075501)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D34-A)")
 		(uuid "047c778f-80d4-483b-8d63-6f865b7f6d02")
-	)
-	(segment
-		(start 224.433001 110.075501)
-		(end 224.05375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D34-A)")
-		(uuid "a429d6d1-2af9-43e9-a11e-2e76f9851fa5")
 	)
 	(segment
 		(start 214.15375 74.13625)
@@ -51898,20 +52004,12 @@
 		(uuid "e1ced50a-de1b-4cce-8428-4a9e382950f8")
 	)
 	(segment
-		(start 148.232688 112.647396)
-		(end 148.232688 110.075188)
+		(start 129.182921 112.654783)
+		(end 129.182921 110.075421)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D30-A)")
-		(uuid "1d32b33b-a631-43dd-9b96-e20f6c674b8a")
-	)
-	(segment
-		(start 148.232688 110.075188)
-		(end 147.85375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D30-A)")
-		(uuid "883e6ae9-43e9-4dad-9f95-0998abcfc7ec")
+		(uuid "055029a3-58f5-4da9-8f95-23afffcf1270")
 	)
 	(segment
 		(start 147.47875 121.731506)
@@ -51978,36 +52076,20 @@
 		(uuid "f99af2b2-6bd6-4736-8db2-2021df3658a0")
 	)
 	(segment
-		(start 129.182921 110.075421)
-		(end 128.80375 109.69625)
+		(start 110.132905 112.654783)
+		(end 110.132905 110.075405)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D29-A)")
-		(uuid "052e8380-0bdb-4209-b14b-23dcdb2f5d92")
+		(uuid "5b77b129-2f5b-4367-a347-6de3a19e82b9")
 	)
 	(segment
-		(start 129.182921 112.654783)
-		(end 129.182921 110.075421)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D29-A)")
-		(uuid "055029a3-58f5-4da9-8f95-23afffcf1270")
-	)
-	(segment
-		(start 262.532857 90.267143)
-		(end 262.15375 90.64625)
+		(start 148.232733 83.957257)
+		(end 148.232733 90.267267)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D24-A)")
-		(uuid "05dd6cc2-4b72-4a21-be98-07fed249f402")
-	)
-	(segment
-		(start 262.532857 83.798507)
-		(end 262.532857 90.267143)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D24-A)")
-		(uuid "4be6bcd9-490d-4ec0-91d8-6465a344eae8")
+		(uuid "3b65e542-4edc-4b38-8b57-7ea4ecf77009")
 	)
 	(segment
 		(start 252.25375 74.13625)
@@ -52226,14 +52308,6 @@
 		(uuid "ac777531-3165-4119-b3f8-9c26ba30b395")
 	)
 	(segment
-		(start 148.232688 81.857212)
-		(end 148.232733 81.857257)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "ROW2")
-		(uuid "b0937fcd-282c-4947-9d17-3d2945b1109c")
-	)
-	(segment
 		(start 129.182857 80.367273)
 		(end 129.182704 80.36712)
 		(width 0.2)
@@ -52266,28 +52340,12 @@
 		(uuid "a15c7615-bd55-4588-990f-bfd299f6bc15")
 	)
 	(segment
-		(start 91.082736 90.267264)
-		(end 90.70375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D15-A)")
-		(uuid "a5f21442-fe9b-43ac-bc08-36e3450c3592")
-	)
-	(segment
 		(start 262.564641 74.85228)
 		(end 262.564641 72.007141)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D12-A)")
 		(uuid "ca2a29c5-6e6a-4535-aedc-e66c700818a4")
-	)
-	(segment
-		(start 262.564641 72.007141)
-		(end 262.15375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D12-A)")
-		(uuid "cde7c1a2-558f-48e1-aff1-5a931e5077d9")
 	)
 	(segment
 		(start 167.282953 112.654783)
@@ -52298,28 +52356,12 @@
 		(uuid "dad8fc2b-f1af-4709-9b51-8ef6f0975198")
 	)
 	(segment
-		(start 167.282953 110.075453)
-		(end 166.90375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D31-A)")
-		(uuid "f238cb60-4907-46a7-8c9f-5ae9071794c1")
-	)
-	(segment
-		(start 224.432857 90.267143)
-		(end 224.05375 90.64625)
+		(start 243.482857 83.798507)
+		(end 243.482857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D22-A)")
-		(uuid "36995ad6-6079-4c30-8352-36711cb0523c")
-	)
-	(segment
-		(start 224.432857 83.798507)
-		(end 224.432857 90.267143)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D22-A)")
-		(uuid "d158a3dd-7821-460e-817b-496255dac10f")
+		(uuid "21983526-517c-4497-86b4-f5a62e4333c3")
 	)
 	(segment
 		(start 157.00375 74.13625)
@@ -52338,14 +52380,6 @@
 		(uuid "3259a04a-ebe9-4567-ac64-77dde7b3cf9b")
 	)
 	(segment
-		(start 151.252224 105.212898)
-		(end 151.209248 105.169922)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "COL7")
-		(uuid "b374e073-e8ae-4d50-974d-455dc0e82289")
-	)
-	(segment
 		(start 151.209248 99.863588)
 		(end 157.00375 94.069086)
 		(width 0.2)
@@ -52354,28 +52388,12 @@
 		(uuid "f404f25a-7a4c-4ae8-b99f-c88cf2409207")
 	)
 	(segment
-		(start 157.00375 94.069086)
-		(end 157.00375 93.18625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "COL7")
-		(uuid "f51f75dd-ba3b-443f-a1c0-96923c708d4c")
-	)
-	(segment
-		(start 205.382857 83.798507)
-		(end 205.382857 90.267143)
+		(start 224.432857 83.798507)
+		(end 224.432857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D21-A)")
-		(uuid "d4125d79-64e0-49a3-aa08-10135e5b8147")
-	)
-	(segment
-		(start 205.382857 90.267143)
-		(end 205.00375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D21-A)")
-		(uuid "fcc08241-15b9-4722-9992-d1f61ffff819")
+		(uuid "d158a3dd-7821-460e-817b-496255dac10f")
 	)
 	(segment
 		(start 195.10375 74.13625)
@@ -52392,14 +52410,6 @@
 		(layer "B.Cu")
 		(net "COL9")
 		(uuid "064ace66-50ec-4acc-82bc-d830ed09110c")
-	)
-	(segment
-		(start 152.252224 105.212898)
-		(end 152.202224 105.162898)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "COL9")
-		(uuid "4d58e0d3-92d9-4b17-b424-77e29ab0c037")
 	)
 	(segment
 		(start 192.431651 95.858349)
@@ -52426,14 +52436,6 @@
 		(uuid "df4d71fa-2ebe-4c86-97f6-20c7a5a249a1")
 	)
 	(segment
-		(start 224.464673 72.007173)
-		(end 224.05375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D10-A)")
-		(uuid "445a99df-cd97-4baa-bd89-662ff508c653")
-	)
-	(segment
 		(start 224.464673 74.85228)
 		(end 224.464673 72.007173)
 		(width 0.2)
@@ -52450,36 +52452,12 @@
 		(uuid "625a114b-6ac4-4b1c-8535-564952d85882")
 	)
 	(segment
-		(start 262.533033 128.366967)
-		(end 262.15375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D47-A)")
-		(uuid "d6bc225f-ef89-4058-add2-97f8ea19ebea")
-	)
-	(segment
-		(start 186.332857 90.267143)
-		(end 185.95375 90.64625)
+		(start 205.382857 83.798507)
+		(end 205.382857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D20-A)")
-		(uuid "2ecdb530-89b2-4b48-861b-dd94be815261")
-	)
-	(segment
-		(start 186.332857 83.798507)
-		(end 186.332857 90.267143)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D20-A)")
-		(uuid "a24f5507-6731-409a-b3bd-9639b171ab76")
-	)
-	(segment
-		(start 129.182857 90.267143)
-		(end 128.80375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D17-A)")
-		(uuid "30b4048c-5ce4-42b4-b051-37dae7f8ac98")
+		(uuid "d4125d79-64e0-49a3-aa08-10135e5b8147")
 	)
 	(segment
 		(start 129.182857 83.798507)
@@ -52490,36 +52468,20 @@
 		(uuid "6f115590-2941-4279-9135-d9b9ad7258bc")
 	)
 	(segment
-		(start 167.282857 90.267143)
-		(end 166.90375 90.64625)
+		(start 186.332857 83.798507)
+		(end 186.332857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D19-A)")
-		(uuid "ad038db2-a421-4b5c-a14d-d1b5c98f3f39")
+		(uuid "a24f5507-6731-409a-b3bd-9639b171ab76")
 	)
 	(segment
-		(start 167.282857 83.798507)
-		(end 167.282857 90.267143)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D19-A)")
-		(uuid "c8da9156-2654-4f7e-84e0-11e653aa9f5c")
-	)
-	(segment
-		(start 52.982857 110.075357)
-		(end 52.60375 109.69625)
+		(start 148.232688 112.647396)
+		(end 148.232688 110.075188)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D25-A)")
-		(uuid "88949c77-eadb-4c1a-9d92-9dfcbf74ff45")
-	)
-	(segment
-		(start 52.982857 112.654783)
-		(end 52.982857 110.075357)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D25-A)")
-		(uuid "af46afaa-87bd-4c05-a49a-a1dc84e9831f")
+		(uuid "1d32b33b-a631-43dd-9b96-e20f6c674b8a")
 	)
 	(segment
 		(start 148.264737 74.85228)
@@ -52528,22 +52490,6 @@
 		(layer "B.Cu")
 		(net "Net-(D6-A)")
 		(uuid "c6b12265-e6a2-41e3-8de2-484a07ba75ef")
-	)
-	(segment
-		(start 148.264737 72.007237)
-		(end 147.85375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D6-A)")
-		(uuid "fb7eba54-f8dd-4044-b084-1b0f1438b58a")
-	)
-	(segment
-		(start 52.982857 128.367143)
-		(end 52.60375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D37-A)")
-		(uuid "62c124fd-083f-48c2-9c99-953019b1ee48")
 	)
 	(segment
 		(start 52.982857 124.279792)
@@ -52634,14 +52580,6 @@
 		(uuid "c8d5b77e-2219-4bbc-a2f4-6ef85a77a4f0")
 	)
 	(segment
-		(start 243.483017 128.366983)
-		(end 243.10375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D46-A)")
-		(uuid "022bfc12-de48-4e6d-8f73-d71bb359fd37")
-	)
-	(segment
 		(start 243.483017 124.279792)
 		(end 243.483017 128.366983)
 		(width 0.2)
@@ -52650,20 +52588,12 @@
 		(uuid "3828352c-39ae-42e2-9b7c-b0da7c06ce6e")
 	)
 	(segment
-		(start 148.232733 83.957257)
-		(end 148.232733 90.267267)
+		(start 167.282857 83.798507)
+		(end 167.282857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D18-A)")
-		(uuid "3b65e542-4edc-4b38-8b57-7ea4ecf77009")
-	)
-	(segment
-		(start 148.232733 90.267267)
-		(end 147.85375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D18-A)")
-		(uuid "7b415975-e281-44fb-9e5e-69bb5b440cc9")
+		(uuid "c8da9156-2654-4f7e-84e0-11e653aa9f5c")
 	)
 	(segment
 		(start 186.332969 112.654783)
@@ -52674,36 +52604,12 @@
 		(uuid "39936920-e202-4672-a966-bdbde5a37174")
 	)
 	(segment
-		(start 186.332969 110.075469)
-		(end 185.95375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D32-A)")
-		(uuid "759eab15-bbbc-4f8c-8dd2-0ac213b3d01e")
-	)
-	(segment
-		(start 205.382985 128.367015)
-		(end 205.00375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D44-A)")
-		(uuid "2d0b3f32-2165-49a5-ac57-dfbaf58999b1")
-	)
-	(segment
 		(start 205.382985 124.279792)
 		(end 205.382985 128.367015)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D44-A)")
 		(uuid "7fcdfa1c-032f-47c7-beae-4e29c08a9455")
-	)
-	(segment
-		(start 110.164769 72.007269)
-		(end 109.75375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D4-A)")
-		(uuid "439e3fea-2709-487a-a197-5590dd9a3b3b")
 	)
 	(segment
 		(start 110.164769 74.85228)
@@ -52722,28 +52628,12 @@
 		(uuid "d340a93e-dcab-4194-a689-ffb0d4be0eee")
 	)
 	(segment
-		(start 262.533033 110.075533)
-		(end 262.15375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D36-A)")
-		(uuid "ebeb3289-78df-4e99-8c6c-73a71bb5e5f3")
-	)
-	(segment
 		(start 157.75768 124.279584)
 		(end 157.75768 128.36732)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D42-A)")
 		(uuid "8a2b2c65-79b2-4be0-8e0e-bb9e2ec96b78")
-	)
-	(segment
-		(start 157.75768 128.36732)
-		(end 157.37875 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D42-A)")
-		(uuid "c2fbbe67-4384-46a5-bdca-1394dcb3f3fa")
 	)
 	(segment
 		(start 129.182921 124.279792)
@@ -52754,36 +52644,12 @@
 		(uuid "61fe01e9-f371-4016-a567-98d5e2c8c459")
 	)
 	(segment
-		(start 129.182921 128.367079)
-		(end 128.80375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D41-A)")
-		(uuid "633211b7-3012-4692-951d-48b18013db16")
-	)
-	(segment
-		(start 243.482857 83.798507)
-		(end 243.482857 90.267143)
+		(start 262.532857 83.798507)
+		(end 262.532857 90.267143)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D23-A)")
-		(uuid "21983526-517c-4497-86b4-f5a62e4333c3")
-	)
-	(segment
-		(start 243.482857 90.267143)
-		(end 243.10375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D23-A)")
-		(uuid "22bd99ee-4795-46a5-838c-b15f6b51bc45")
-	)
-	(segment
-		(start 91.082889 128.367111)
-		(end 90.70375 128.74625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D39-A)")
-		(uuid "66817abb-9816-467f-abd9-52b14cfc03c9")
+		(uuid "4be6bcd9-490d-4ec0-91d8-6465a344eae8")
 	)
 	(segment
 		(start 91.082889 124.27969)
@@ -52792,14 +52658,6 @@
 		(layer "B.Cu")
 		(net "Net-(D39-A)")
 		(uuid "85011077-badd-4d32-8416-1a89c383c3b1")
-	)
-	(segment
-		(start 205.414689 72.007189)
-		(end 205.00375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D9-A)")
-		(uuid "504d25e9-b983-4bc5-b938-40afb8883e79")
 	)
 	(segment
 		(start 205.414689 74.85228)
@@ -52818,28 +52676,12 @@
 		(uuid "4a1ee925-39cd-4a90-9875-ec539ae315db")
 	)
 	(segment
-		(start 52.982857 71.975357)
-		(end 52.60375 71.59625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D1-A)")
-		(uuid "e0f29b42-83a1-45cb-8485-8dc34423a835")
-	)
-	(segment
-		(start 91.082889 112.654783)
-		(end 91.082889 110.075389)
+		(start 72.032873 112.654783)
+		(end 72.032873 110.075373)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D27-A)")
-		(uuid "3c4810b8-879a-4929-acf5-0e5c1b5e0944")
-	)
-	(segment
-		(start 91.082889 110.075389)
-		(end 90.70375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D27-A)")
-		(uuid "72ffb122-3187-4086-92bb-47f46f388407")
+		(uuid "6897a26e-c1b1-4ad7-b78f-52901934b6a2")
 	)
 	(segment
 		(start 110.132857 83.798507)
@@ -52850,22 +52692,6 @@
 		(uuid "4a0b78e6-d61f-47ed-b3c2-7bc6c886e78f")
 	)
 	(segment
-		(start 110.132857 90.267143)
-		(end 109.75375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D16-A)")
-		(uuid "8bae0ab1-ca29-4363-b9d4-52918bc09359")
-	)
-	(segment
-		(start 52.982857 90.267143)
-		(end 52.60375 90.64625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D13-A)")
-		(uuid "df8bfbd5-8d1f-4925-a518-3b76dced8757")
-	)
-	(segment
 		(start 52.982857 83.798506)
 		(end 52.982857 90.267143)
 		(width 0.2)
@@ -52874,28 +52700,12 @@
 		(uuid "e00b16f5-444a-4e22-a4e2-7c911ab2a1b9")
 	)
 	(segment
-		(start 72.032873 110.075373)
-		(end 71.65375 109.69625)
+		(start 52.982857 112.654783)
+		(end 52.982857 110.075357)
 		(width 0.2)
 		(layer "B.Cu")
 		(net "Net-(D26-A)")
-		(uuid "49d265d6-1947-4695-b1b4-5bc234ceef67")
-	)
-	(segment
-		(start 72.032873 112.654783)
-		(end 72.032873 110.075373)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D26-A)")
-		(uuid "6897a26e-c1b1-4ad7-b78f-52901934b6a2")
-	)
-	(segment
-		(start 243.483017 110.075517)
-		(end 243.10375 109.69625)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(D35-A)")
-		(uuid "12e7d105-9d84-4f47-b2e3-34c9654143ee")
+		(uuid "af46afaa-87bd-4c05-a49a-a1dc84e9831f")
 	)
 	(segment
 		(start 243.483017 112.654783)

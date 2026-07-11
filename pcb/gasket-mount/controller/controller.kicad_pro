@@ -171,7 +171,7 @@
         "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -548,9 +548,25 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "Decoupling",
+        "pcb_color": "rgb(239, 167, 86)",
+        "priority": 0,
+        "schematic_color": "rgb(239, 167, 86)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.15,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "GPIO",
         "pcb_color": "rgb(201, 131, 175)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(201, 131, 175)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -566,7 +582,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgb(255, 93, 81)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(255, 93, 81)",
         "track_width": 0.3,
         "tuning_profile": "",
@@ -582,7 +598,7 @@
         "microvia_drill": 0.1,
         "name": "QSPI",
         "pcb_color": "rgb(173, 225, 114)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(173, 225, 114)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -598,7 +614,7 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgb(56, 138, 255)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(56, 138, 255)",
         "track_width": 0.3,
         "tuning_profile": "",
@@ -653,8 +669,24 @@
         "pattern": "/RESET"
       },
       {
-        "netclass": "GPIO",
+        "netclass": "Decoupling",
         "pattern": "+1V1"
+      },
+      {
+        "netclass": "Decoupling",
+        "pattern": "1V1 Decoupling"
+      },
+      {
+        "netclass": "Decoupling",
+        "pattern": "3V3 Decoupling"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/SW(CLK|DIO)"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "slash"
       }
     ]
   },
@@ -786,7 +818,7 @@
         "uuid": "b97b13d9-a629-4a4f-9b39-f1265da20b0c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "H4,J2-3,NT1,#PWR20,#PWR30,#PWR33,#PWR37-38,SW5",
     "variants": []
   },
   "sheets": [
