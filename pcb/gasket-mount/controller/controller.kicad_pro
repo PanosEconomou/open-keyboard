@@ -76,7 +76,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|71637499|58910491|ab2d8d30-0170-472b-abe7-50a9eab15a63|87c4f808-7f13-4878-9579-11ee87bb5d29",
+          "USB Output"
+        ],
+        [
+          "silk_edge_clearance|81037500|58862500|ab2d8d30-0170-472b-abe7-50a9eab15a63|82bf9329-0300-48a5-a790-9fb2355d80ba",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -158,7 +167,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.25,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
@@ -210,7 +219,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.15,
+        0.2,
+        0.3
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -242,6 +254,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
         }
       ],
       "zones_allow_external_fillets": false
@@ -479,7 +495,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -542,7 +558,7 @@
         "via_drill": 0.3
       },
       {
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -576,7 +592,7 @@
       {
         "clearance": 0.15,
         "diff_pair_gap": 0.15,
-        "diff_pair_width": 0.25,
+        "diff_pair_width": 0.3,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -584,7 +600,7 @@
         "pcb_color": "rgb(56, 138, 255)",
         "priority": 1,
         "schematic_color": "rgb(56, 138, 255)",
-        "track_width": 0.25,
+        "track_width": 0.3,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
@@ -618,10 +634,6 @@
       },
       {
         "netclass": "Power",
-        "pattern": "+1V1"
-      },
-      {
-        "netclass": "Power",
         "pattern": "+3V3"
       },
       {
@@ -639,6 +651,10 @@
       {
         "netclass": "GPIO",
         "pattern": "/RESET"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "+1V1"
       }
     ]
   },
