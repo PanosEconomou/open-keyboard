@@ -24,6 +24,8 @@ Let's assemble some candidates
 
 Out of these 4 the most trusted companies are Molex (the first) and Hirose (the last). The last one is 1.75mm in thickness while the first one is 1.9mm in thickness. In addition the last one allows for an FFC design with a little lip so that it withstands more horizontal force than the first. I hope its vertical force performance is just as good, but it's worth checking before I commit. 
 
+The issues with these 4 is that 18 pins is quite long, so the whole thing will not fit between the hotswap sockets on the bottom part of the matrix. So we would probably want to aim for a more compact cable and connector.
+
 ## Track width settings 
 
 Now that I get to redesign the board I think I should pay more attention to things like track widths and whatnot. Before I just almost took things to be defaults, but honestly this time I might just use smaller ones. Like everything in say raspi pico has signal lines to be smaller than 1mm and I was kind of afraid to figure it out. Let's try something new now! 
