@@ -76,16 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_edge_clearance|71637499|58910491|ab2d8d30-0170-472b-abe7-50a9eab15a63|87c4f808-7f13-4878-9579-11ee87bb5d29",
-          "USB Output"
-        ],
-        [
-          "silk_edge_clearance|81037500|58862500|ab2d8d30-0170-472b-abe7-50a9eab15a63|82bf9329-0300-48a5-a790-9fb2355d80ba",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },

@@ -55,3 +55,13 @@ Here is a picture with the full flash and kind of the best routing I could do
 ![flash](./media/flash.png)
 
 The component at the center with thermal pad 9 is the flash memory. It's 2MB and honestly there is no keyboard firmware that will be 16MB. It also causes the whole board to be shifted a bit awkwardly, so we will change that. Raspberry Pi Pico uses a [W25Q16JVUXIQ](https://jlcpcb.com/partdetail/WinbondElec-W25Q16JVUXIQ/C2843335) which is a 2MB chip and honestly is still overkill in terms of capacity, but it comes in a 2x3 mm package!
+
+## Test Points
+
+In my layout there is a bit of free space to play with, so perhaps it is the perfect opportunity to add some test points! Header pins ended up looking massive so I really only have space for two pairs of two. One should clearly be the 3.3V net and ground so that I check that power is working properly and have a reference for the rp2040 io. Then I was thinking of exposing some more GPIO pins. Looking at the datasheet, pins GPIO26 and GPIO27 are not only also ADC but they also form an I2C bus. So these are the obvious choice here for test points. 
+
+## PCB Mascot
+
+An equally or perhaps more important aspect of this PCB is the silkscreen design at the back. I think that since the keyboard is called pankeyk, a little cute pancake mascot would be so fun to put! Or like a little pan flipping a keycap as if it is a pacake. I'll try to design something in inkscape.
+
+
