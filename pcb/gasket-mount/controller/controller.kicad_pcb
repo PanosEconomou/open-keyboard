@@ -5739,6 +5739,7 @@
 		(property "Value" "5k1"
 			(at 0 1.17 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "fbf9c720-d26b-4e87-8b07-3b5017291a8e")
 			(effects
 				(font
