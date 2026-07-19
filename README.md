@@ -2,7 +2,12 @@
 
 I want a cool keyboard, and if I am going to spend so much money on a good one that someone else makes why not spend even more money for a worse one that I make?
 
-There is a journal here somewhere that documents the process.
+![render](./journal/media/render.png)
+
+## Journal
+
+There is a [journal](./journal/02-layout-framing.md) here somewhere that documents the process.
+
 
 ## Inspiration
 Let's start with some inspiration

@@ -1,0 +1,2 @@
+case/gasket-mount-v1/gasket-mount-v1.gltf filter=lfs diff=lfs merge=lfs -text
+case/gasket-mount-v1/render/blenderer.blend filter=lfs diff=lfs merge=lfs -text
