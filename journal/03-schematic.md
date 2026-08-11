@@ -64,6 +64,8 @@ Another important consideration according to the schematics is to use decoupling
 
 A good alternative is the [AP2112K-3.3TRG1](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746), it is more modern, functions with much smaller external resistance, I can still use 0402 capacitors. So we will replace that on the schematics.
 
+An extra consideration is how much capacitance to put. The datasheet says minimum 1u, so I will go with 10u. Everyone also uses bigger footprints for the regulator capacitors, so we can try and place 0603 there. 
+
 ## Crystal
 
 Things are starting to get a bit scary. This is probably because I have the least experience with this, but it seems to be a finicky thing altogether. Basically we want to provide an oscillating voltage on our microprocessor in order for it to act as a clock. While it does have an internal crystal it is highly recommended by raspi to use an external one. They, in-fact gave us the specifications for the crystal they extensively tested and provided ample warning about testing a billion times if you change the crystal.

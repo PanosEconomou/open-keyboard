@@ -15477,7 +15477,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "TF31-18S-0.5SH(800)"
 			(at 248.92 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)

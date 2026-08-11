@@ -34,12 +34,25 @@ For the resistor power rating we don't need much, so something around 60-100 mW 
 3. 10k [CRCW040210K0FKEDC](https://jlcpcb.com/partdetail/VishayIntertech-CRCW040210K0FKEDC/C844714)
 4. 27 [CRCW040227R0FKED](https://jlcpcb.com/partdetail/VishayIntertech-CRCW040227R0FKED/C482122)
 
+I also found budget options for JLC's maufacturing
+
+1. 1k [0402WGF1001TCE](https://jlcpcb.com/partdetail/12256-0402WGF1001TCE/C11702)
+2. 5.1k [0402WGF5101TCE](https://jlcpcb.com/partdetail/26648-0402WGF5101TCE/C25905)
+3. 10k [0402WGF1002TCE](https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744)
+3. 33 (it needs to be between 27 and 44) [0402WGF330JTCE](https://jlcpcb.com/partdetail/25848-0402WGF330JTCE/C25105)
 
 For the capacitors I want to also pick 0402 packaging here are the ones I found
 
 1. 100n [0402B104J160CT](https://jlcpcb.com/partdetail/Walsin_TechCorp-0402B104J160CT/C387940)
 2. 15p [GRM1555C1H150FA01D](https://jlcpcb.com/partdetail/172911-GRM1555C1H150FA01D/C161530)
 3. 1u [GRM155Z71A105KE01D](https://jlcpcb.com/partdetail/548880-GRM155Z71A105KE01D/C528974)
+
+the budget options are
+
+1. 100n [CL05B104KO5NNNC](https://jlcpcb.com/partdetail/1877-CL05B104KO5NNNC/C1525)
+2. 15p [0402CG150J500NT](https://jlcpcb.com/partdetail/1900-0402CG150J500NT/C1548)
+3. 1u [CL05A105KA5NQNC](https://jlcpcb.com/partdetail/53938-CL05A105KA5NQNC/C52923)
+4. 10u [CL10A106MA8NRNC](https://jlcpcb.com/partdetail/97651-CL10A106MA8NRNC/C96446)
 
 ## PCB Pushbuttons 
 
